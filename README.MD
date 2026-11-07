@@ -48,7 +48,7 @@ The project explores data manipulation, analysis, visualization, large-scale dat
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/Denim951/big-data-project.git
 cd big-data-project
 ```
 
