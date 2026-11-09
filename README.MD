@@ -41,7 +41,7 @@ The project explores data manipulation, analysis, visualization, large-scale dat
 | `01_basic_python.ipynb` | Basic data manipulation, analysis, and visualization |
 | `02_advanced_python.ipynb` | Out-of-memory processing and fast data processing |
 | `03_clustering.ipynb` | Clustering techniques (Chapter 7) |
-| `04_spectral_partitioning.ipynb` | Spectral graph partitioning (Chapter 10) |
+| `04_frequent_itemsets.ipynb` | Finding frequent itemsets using a k-pass A Priori algorithm (Chapter 6) |
 
 ## Setup Instructions
 
