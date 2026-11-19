@@ -1,4 +1,5 @@
 anyio==4.16.0
+appnope==1.0.0
 argon2-cffi==25.1.0
 argon2-cffi-bindings==26.1.0
 arrow==1.4.0
@@ -15,12 +16,14 @@ click==8.5.0
 cloudpickle==3.1.2
 comm==0.2.3
 contourpy==1.4.0
+cramjam==2.14.0
 cycler==0.12.1
 dask==2026.8.0
 debugpy==1.8.22
 defusedxml==0.7.1
 executing==2.3.0
 fastjsonschema==2.22.3
+fastparquet==2026.9.0
 fonttools==4.68.0
 fqdn==1.6.0
 fsspec==2026.9.0
