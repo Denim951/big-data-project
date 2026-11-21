@@ -18,3 +18,6 @@ Thumbs.db
 
 # IDE configuration
 .idea/
+
+# Raw data (too large for GitHub, download separately)
+data/raw/

@@ -1,0 +1,111 @@
+Finding cutoffs
+Completed.
+Reading the whole file
+  chunk 1 of 57
+  chunk 11 of 57
+  chunk 21 of 57
+  chunk 31 of 57
+  chunk 41 of 57
+  chunk 51 of 57
+songs used: 39270440
+different trait combinations: 86702
+share of songs that are popular: 11.1 %
+
+##### SMALL CHECK (10 songs) #####
+items: 21
+  pass 1: 17 common traits
+  pass 2 : 136 checked, 21 kept
+  pass 3 : 7 checked, 4 kept
+  pass 4 : 0 checked, 0 kept
+   low_tempo, minor_key -> low_acousticness | right 100 % of the time
+   major_key -> low_speechiness | right 100 % of the time
+   low_speechiness -> major_key | right 100 % of the time
+   low_danceability, major_key -> low_speechiness | right 100 % of the time
+   low_danceability, low_speechiness -> major_key | right 100 % of the time
+   low_danceability -> major_key | right 100 % of the time
+   low_danceability -> low_speechiness | right 100 % of the time
+   instrumental, major_key -> low_speechiness | right 100 % of the time
+   instrumental, low_speechiness -> major_key | right 100 % of the time
+   high_energy, high_loudness -> explicit | right 100 % of the time
+
+##### ALL SONGS #####
+
+threshold: 10 % of songs
+  pass 1: 21 common traits
+  pass 2 : 210 checked, 110 kept
+  pass 3 : 305 checked, 33 kept
+  pass 4 : 6 checked, 2 kept
+  pass 5 : 0 checked, 0 kept
+  common groups found: 166
+  confidence 0.9 -> 2 rules
+  confidence 0.7 -> 44 rules
+  confidence 0.5 -> 129 rules
+
+threshold: 5 % of songs
+  pass 1: 21 common traits
+  pass 2 : 210 checked, 158 kept
+  pass 3 : 656 checked, 263 kept
+  pass 4 : 276 checked, 110 kept
+  pass 5 : 42 checked, 20 kept
+  pass 6 : 2 checked, 2 kept
+  pass 7 : 0 checked, 0 kept
+  common groups found: 574
+  confidence 0.9 -> 43 rules
+  confidence 0.7 -> 365 rules
+  confidence 0.5 -> 916 rules
+
+threshold: 3 % of songs
+  pass 1: 21 common traits
+  pass 2 : 210 checked, 185 kept
+  pass 3 : 915 checked, 507 kept
+  pass 4 : 872 checked, 350 kept
+  pass 5 : 225 checked, 147 kept
+  pass 6 : 44 checked, 40 kept
+  pass 7 : 5 checked, 4 kept
+  pass 8 : 0 checked, 0 kept
+  common groups found: 1254
+  confidence 0.9 -> 184 rules
+  confidence 0.7 -> 1095 rules
+  confidence 0.5 -> 2425 rules
+
+Strongest rules (threshold 5%, confidence 70%+):
+  pass 1: 21 common traits
+  pass 2 : 210 checked, 158 kept
+  pass 3 : 656 checked, 263 kept
+  pass 4 : 276 checked, 110 kept
+  pass 5 : 42 checked, 20 kept
+  pass 6 : 2 checked, 2 kept
+  pass 7 : 0 checked, 0 kept
+   high_acousticness, low_loudness, low_speechiness, low_valence -> low_energy | right 97 % of the time
+   high_acousticness, low_danceability, low_loudness, low_speechiness -> low_energy | right 96 % of the time
+   high_acousticness, low_danceability, low_loudness, low_valence, major_key -> low_energy | right 95 % of the time
+   high_acousticness, low_loudness, low_tempo, low_valence -> low_energy | right 95 % of the time
+   high_acousticness, low_loudness, low_valence, major_key -> low_energy | right 95 % of the time
+   high_acousticness, low_danceability, low_loudness, low_valence -> low_energy | right 95 % of the time
+   high_acousticness, low_liveness, low_loudness -> low_energy | right 95 % of the time
+   high_acousticness, instrumental, low_danceability, low_energy, low_valence -> low_loudness | right 94 % of the time
+   high_acousticness, low_loudness, low_speechiness -> low_energy | right 94 % of the time
+   high_acousticness, instrumental, low_danceability, low_loudness, low_valence -> low_energy | right 94 % of the time
+
+##### RULES THAT END IN 'popular' (threshold 1%) #####
+baseline: popular songs are 11.1 % of all songs
+  pass 1: 21 common traits
+  pass 2 : 210 checked, 197 kept
+  pass 3 : 1090 checked, 926 kept
+  pass 4 : 2624 checked, 1494 kept
+  pass 5 : 1613 checked, 916 kept
+  pass 6 : 486 checked, 365 kept
+  pass 7 : 139 checked, 131 kept
+  pass 8 : 34 checked, 34 kept
+  pass 9 : 4 checked, 4 kept
+  pass 10 : 0 checked, 0 kept
+   high_danceability, high_loudness -> popular | popular 17 % of the time
+   high_danceability, high_loudness, low_acousticness -> popular | popular 17 % of the time
+   high_danceability, high_energy, high_loudness -> popular | popular 17 % of the time
+   high_danceability, high_loudness, high_valence -> popular | popular 17 % of the time
+   high_danceability, high_energy, high_loudness, high_valence -> popular | popular 16 % of the time
+   high_danceability, high_loudness, major_key -> popular | popular 16 % of the time
+   high_loudness, high_valence, minor_key -> popular | popular 16 % of the time
+   high_loudness, high_speechiness -> popular | popular 16 % of the time
+   high_loudness, minor_key -> popular | popular 16 % of the time
+   high_energy, high_loudness, minor_key -> popular | popular 15 % of the time
