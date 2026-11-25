@@ -99,7 +99,7 @@ def recommend(users, user, k, how_many=5):
 
 
 def small_table():
-    songs = ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10"]
+    movies = ["M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9", "M10"]
     table = {
         "U1":  [5, 4, None, 1, 2, 5, None, 1, 4, 2],
         "U2":  [4, 5, 4, 2, None, 4, 1, 2, 5, 1],
@@ -115,9 +115,9 @@ def small_table():
     users = {}
     for name, row in table.items():
         users[name] = {}
-        for song, rating in zip(songs, row):
+        for movie, rating in zip(movies, row):
             if rating is not None:
-                users[name][song] = float(rating)
+                users[name][movie] = float(rating)
     return users
 
 
@@ -155,9 +155,9 @@ if __name__ == "__main__":
     for other in small:
         if other != "U1":
             print("  U1 and", other, ":", round(pearson(small["U1"], small[other], 3), 2))
-    for song in ["S3", "S7"]:
-        guess = predict(small, "U1", song, k=3, min_common=3)
-        print("U1 has not rated", song, "- predicted rating:", round(guess, 1))
+    for movie in ["M3", "M7"]:
+        guess = predict(small, "U1", movie, k=3, min_common=3)
+        print("U1 has not rated", movie, "- predicted rating:", round(guess, 1))
 
     print("\n#####Testing on MovieLens data#####")
     users = load_ratings(os.path.join(project, FILE_NAME))
