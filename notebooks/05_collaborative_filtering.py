@@ -149,7 +149,7 @@ if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))
     project = os.path.dirname(here)
 
-    print("#####Testing on 10 users#####")
+    print("#####Testing on 10 users and 10 movies#####")
     small = small_table()
     print("Similarities with U1:")
     for other in small:
@@ -162,9 +162,9 @@ if __name__ == "__main__":
     print("\n#####Testing on MovieLens data#####")
     users = load_ratings(os.path.join(project, FILE_NAME))
     titles = load_titles(os.path.join(project, MOVIES_NAME))
-    print("users:", len(users))
-    print("movies:", len({item for ratings in users.values() for item in ratings}))
-    print("ratings:", sum(len(r) for r in users.values()))
+    print("Users:", len(users))
+    print("Movies:", len({item for ratings in users.values() for item in ratings}))
+    print("Ratings:", sum(len(r) for r in users.values()))
 
     tests = pick_test_ratings(users, 500)
     print("\nRMSE baseline:", round(rmse(users, tests, 0, "user average"), 3))
@@ -173,6 +173,6 @@ if __name__ == "__main__":
         adjusted = rmse(users, tests, k, "adjusted")
         print("k =", k, "| plain:", round(plain, 3), "| adjusted:", round(adjusted, 3))
 
-    print("\nTop 5 picks for user 1:")
+    print("\nTop 5 picks for MovieLens user 1:")
     for score, item in recommend(users, "1", 20):
         print("  ", titles.get(item, item), "| predicted", round(score, 1))
