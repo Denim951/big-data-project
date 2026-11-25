@@ -1,0 +1,30 @@
+#####Testing on 10 users#####
+Similarities with U1:
+  U1 and U2 : 0.81
+  U1 and U3 : -0.91
+  U1 and U4 : 0.96
+  U1 and U5 : -0.82
+  U1 and U6 : 0.86
+  U1 and U7 : -0.93
+  U1 and U8 : 0.9
+  U1 and U9 : -0.95
+  U1 and U10 : 0.94
+U1 has not rated S3 - predicted rating: 4.0
+U1 has not rated S7 - predicted rating: 1.7
+
+#####Testing on MovieLens data#####
+users: 610
+movies: 9724
+ratings: 100836
+
+RMSE baseline: 0.976
+k = 10 | plain: 1.006 | adjusted: 0.932
+k = 20 | plain: 0.991 | adjusted: 0.917
+k = 50 | plain: 0.99 | adjusted: 0.92
+
+Top 5 picks for user 1:
+   Sixth Sense, The (1999) | predicted 4.8
+   Spider-Man 2 (2004) | predicted 4.7
+   The Imitation Game (2014) | predicted 4.6
+   Star Trek: First Contact (1996) | predicted 4.5
+   Shawshank Redemption, The (1994) | predicted 4.4
